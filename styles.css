@@ -52,3 +52,7 @@ path {
     transition: stroke-dashoffset 0.5s ease;
     stroke-linecap: round;
 }
+
+.hidden {
+    visibility: hidden;
+}
