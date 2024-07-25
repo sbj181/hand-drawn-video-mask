@@ -48,6 +48,7 @@ body, html {
     object-fit: cover; /* Ensures the video behaves like a background image */
     pointer-events: none;
     border: 0;
+    background-color: #000;
 }
 
 .mask {
