@@ -1,12 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
     const path = document.getElementById('scribble');
     const pathLength = path.getTotalLength();
+    const videoWrapper = document.getElementById('video-wrapper');
+    const backgroundVideo = document.getElementById('background-video');
 
     path.style.strokeDasharray = pathLength;
     path.style.strokeDashoffset = pathLength;
 
-     // Hide the path initially
-     path.classList.add('hidden');
+    // Hide the path initially
+    path.classList.add('hidden');
+
+    // Add touch event listener
+    videoWrapper.addEventListener('touchstart', () => {
+        backgroundVideo.src += "&autoplay=1&mute=1";
+    });
 
     document.addEventListener('scroll', () => {
         // Reveal the path on the first scroll event
