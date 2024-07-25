@@ -22,8 +22,8 @@ body, html {
     height: 100%;
     z-index: 1;
     overflow: hidden;
-    background-color: #000; /* Fallback background color */
-    background-image: url('path/to/your/fallback-image.jpg'); /* Fallback background image */
+    background-color: #777; /* Fallback background color */
+    background-image: url('https://thegrovery.com/hubfs/homepageheader-Feb-13-2024-06-26-04-3539-PM.png'); /* Fallback background image */
     background-size: cover;
     background-position: center;
 }
