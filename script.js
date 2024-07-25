@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     path.style.strokeDasharray = pathLength;
     path.style.strokeDashoffset = pathLength;
 
-    // Hide the path initially
-    path.classList.add('hidden');
+    // Do not hide the path initially
+    // path.classList.add('hidden');
 
     // Add touch event listener
     videoWrapper.addEventListener('touchstart', () => {
