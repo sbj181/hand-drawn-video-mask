@@ -49,6 +49,7 @@ body, html {
     pointer-events: none;
     border: 0;
     background-color: #000;
+    opacity: 0;
 }
 
 .mask {
