@@ -48,8 +48,6 @@ body, html {
     object-fit: cover; /* Ensures the video behaves like a background image */
     pointer-events: none;
     border: 0;
-    background-color: #000;
-    opacity: 0;
 }
 
 .mask {
@@ -59,12 +57,13 @@ body, html {
     width: 100%;
     height: 100%;
     z-index: 2;
-    /* mix-blend-mode: lighten; */
-    /* background: white; */
-    background: rgba(255, 255, 255, .95);
+    mix-blend-mode: multiply;
+    background: black
 }
 
 path {
+    stroke: white;
+    mix-blend-mode: screen;
     stroke-dasharray: 2000; /* Initial value */
     stroke-dashoffset: 2000; /* Initial value */
     transition: stroke-dashoffset 0.5s ease;
