@@ -22,8 +22,8 @@ body, html {
     height: 100%;
     z-index: 1;
     overflow: hidden;
-    background-color: #777; /* Fallback background color */
-    background-image: url('https://thegrovery.com/hubfs/homepageheader-Feb-13-2024-06-26-04-3539-PM.png'); /* Fallback background image */
+    background-color: #000; /* Fallback background color */
+    background-image: url('path/to/your/fallback-image.jpg'); /* Fallback background image */
     background-size: cover;
     background-position: center;
 }
@@ -57,13 +57,24 @@ body, html {
     width: 100%;
     height: 100%;
     z-index: 2;
-    mix-blend-mode: multiply;
-    background: black
+    mix-blend-mode: lighten;
+    background: white;
+}
+
+/* Apply different styles for mobile devices */
+@media only screen and (max-width: 768px) {
+    .mask {
+        mix-blend-mode: normal; /* Disable mix-blend-mode on mobile */
+        background: rgba(255, 255, 255, 0.8); /* Use semi-transparent background */
+    }
+
+    path {
+        stroke: rgba(0, 0, 0, 0.9);
+        mix-blend-mode: normal; /* Disable mix-blend-mode on mobile */
+    }
 }
 
 path {
-    stroke: white;
-    mix-blend-mode: screen;
     stroke-dasharray: 2000; /* Initial value */
     stroke-dashoffset: 2000; /* Initial value */
     transition: stroke-dashoffset 0.5s ease;
